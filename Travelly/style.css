@@ -1,0 +1,293 @@
+/*global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 4.8rem;
+}
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+button {
+    padding: 1rem 2rem;
+    color: salmon;
+    border: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+    background-color: seashell;
+    transition: background 0.5s ease-in-out;
+}
+button:hover {
+    background-color: wheat;
+}
+/*nave section */
+.main-head {
+    background: black;
+    color: white;
+    top: 0px;
+    position: sticky;
+}
+nav {
+    min-height: 10vh;
+    padding: 2rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 40rem;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-weight: regular;
+    font-family: 'Finger Paint';
+}
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url('/Travelly/img/pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+/*BENEFITS SECTION */
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url('/Travelly/img/pic2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head {
+    width: 90%;
+    margin: auto;
+}
+
+.locations-head h2 {
+    padding: 1rem 0rem;
+    text-decoration: underline;
+}
+.locations-head h3 {
+    padding: 4rem 0rem;
+    /* background: linear-gradient(blue, red);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 10%;
+    width: 10%;
+}
+.moving-cloud-1 {
+    /* animation: cloudAnimation 3s infinite alternate ease-in-out; */
+}
+.moving-cloud-2 {
+    top: 10%;
+    z-index: -1;
+    opacity: 50%;
+}
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+    to {
+        transform: translate(0%, -0%);
+    }
+}
+
+/*Benefits Section */
+.benefits-head {
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.benefits-head h3 {
+    padding: 1rem;
+}
+.card {
+    /* background-color: tomato; */
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card-icon {
+    background-color: rosybrown;
+}
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+    height: 100px;
+}
+.card h4,
+.card p {
+    padding: 1rem;
+}
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url('/Travelly/img/cloud.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background-color: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    border-radius: 20px;
+}
+.form-head {
+    text-align: center;
+    padding: 4rem;
+    color: white;
+}
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+}
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+footer {
+    color: white;
+    background-color: rgba(19, 28, 39, 0.8);
+}
+
+.footer-wrapper img {
+    max-width: 30%;
+}
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+footer h5 {
+    flex: 1 1 40rem;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 950px) {
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem;
+    }
+    .cloud {
+        height: 40rem;
+        z-index: -1;
+    }
+    footer {
+        text-align: center;
+    }
+    footer h5 {
+        padding-bottom: 2rem;
+    }
+    .form-wrapper {
+        width: 100%;
+    }
+}
